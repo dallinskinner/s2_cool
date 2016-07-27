@@ -1,0 +1,351 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../bower_components/reset-css/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../bower_components/reset-css/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../bower_components/reset-css/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../bower_components/reset-css/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../bower_components/reset-css/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+/* line 39, ../bower_components/reset-css/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, ../bower_components/reset-css/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* GLOBAL */
+/* line 79, ../scss/main.scss */
+body {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+}
+
+/* line 84, ../scss/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 88, ../scss/main.scss */
+a:visited {
+  color: inherit;
+}
+
+/* FIXED NAV */
+/* line 94, ../scss/main.scss */
+.main-nav {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* line 102, ../scss/main.scss */
+.home, .contact {
+  position: fixed;
+  border: 2px solid #0000ff;
+  text-align: center;
+  padding: .5em 0;
+  width: 131px;
+  z-index: 10;
+  background-color: #fff;
+}
+/* line 21, ../scss/main.scss */
+.home, .contact {
+  transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
+}
+/* line 28, ../scss/main.scss */
+.calendar-color .home, .calendar-color .contact {
+  border-color: #ff0000;
+  -webkit-text-stroke-color: #ff0000;
+}
+/* line 32, ../scss/main.scss */
+.calendar-color .home.hover, .calendar-color .contact.hover {
+  color: #ff0000;
+}
+/* line 37, ../scss/main.scss */
+.yeah-color .home, .yeah-color .contact {
+  border-color: #0000ff;
+  -webkit-text-stroke-color: #0000ff;
+}
+/* line 41, ../scss/main.scss */
+.yeah-color .home.hover, .yeah-color .contact.hover {
+  color: #0000ff;
+}
+/* line 46, ../scss/main.scss */
+.secret-page-color .home, .secret-page-color .contact {
+  border-color: #000;
+  -webkit-text-stroke-color: #000;
+}
+/* line 50, ../scss/main.scss */
+.secret-page-color .home.hover, .secret-page-color .contact.hover {
+  color: #000;
+}
+/* line 112, ../scss/main.scss */
+.home a, .contact a {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+/* line 116, ../scss/main.scss */
+.secret-page-color .home a, .secret-page-color .contact a {
+  color: #000;
+}
+/* line 119, ../scss/main.scss */
+.yeah-color .home a, .yeah-color .contact a {
+  color: #0000ff;
+}
+/* line 122, ../scss/main.scss */
+.calendar-color .home a, .calendar-color .contact a {
+  color: #ff0000;
+}
+
+/* line 128, ../scss/main.scss */
+.home {
+  top: 35px;
+  left: 35px;
+}
+
+/* line 133, ../scss/main.scss */
+.contact {
+  bottom: 35px;
+  right: 35px;
+}
+
+/* HOME */
+/* line 140, ../scss/main.scss */
+.home-page {
+  overflow: hidden;
+}
+
+/* line 144, ../scss/main.scss */
+.home-nav {
+  font-family: DSBluuNext-Bold;
+  font-size: 72px;
+  width: 1600px;
+  height: 1000px;
+  margin-left: -300px;
+  margin-top: -300px;
+  transform: rotate(-45deg);
+}
+/* line 154, ../scss/main.scss */
+.home-nav li {
+  display: inline-block;
+}
+/* line 158, ../scss/main.scss */
+.home-nav a {
+  -webkit-text-stroke: 1px #0000ff;
+  color: transparent;
+  transition: color 0.5s;
+}
+/* line 21, ../scss/main.scss */
+.home-nav a {
+  transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
+}
+/* line 28, ../scss/main.scss */
+.calendar-color .home-nav a {
+  border-color: #ff0000;
+  -webkit-text-stroke-color: #ff0000;
+}
+/* line 32, ../scss/main.scss */
+.calendar-color .home-nav a.hover {
+  color: #ff0000;
+}
+/* line 37, ../scss/main.scss */
+.yeah-color .home-nav a {
+  border-color: #0000ff;
+  -webkit-text-stroke-color: #0000ff;
+}
+/* line 41, ../scss/main.scss */
+.yeah-color .home-nav a.hover {
+  color: #0000ff;
+}
+/* line 46, ../scss/main.scss */
+.secret-page-color .home-nav a {
+  border-color: #000;
+  -webkit-text-stroke-color: #000;
+}
+/* line 50, ../scss/main.scss */
+.secret-page-color .home-nav a.hover {
+  color: #000;
+}
+/* line 21, ../scss/main.scss */
+.home-nav a.hover {
+  transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
+}
+/* line 28, ../scss/main.scss */
+.calendar-color .home-nav a.hover {
+  border-color: #ff0000;
+  -webkit-text-stroke-color: #ff0000;
+}
+/* line 32, ../scss/main.scss */
+.calendar-color .home-nav a.hover.hover {
+  color: #ff0000;
+}
+/* line 37, ../scss/main.scss */
+.yeah-color .home-nav a.hover {
+  border-color: #0000ff;
+  -webkit-text-stroke-color: #0000ff;
+}
+/* line 41, ../scss/main.scss */
+.yeah-color .home-nav a.hover.hover {
+  color: #0000ff;
+}
+/* line 46, ../scss/main.scss */
+.secret-page-color .home-nav a.hover {
+  border-color: #000;
+  -webkit-text-stroke-color: #000;
+}
+/* line 50, ../scss/main.scss */
+.secret-page-color .home-nav a.hover.hover {
+  color: #000;
+}
+
+/* CONTENT PAGES */
+/* line 179, ../scss/main.scss */
+.main-content {
+  padding: 75px 205px;
+}
+
+/* line 183, ../scss/main.scss */
+.page-title {
+  -webkit-text-stroke: 1px #0000ff;
+  color: transparent;
+  font-size: 78px;
+  font-family: DSBluuNext-Bold;
+  text-align: center;
+  margin-bottom: 80px;
+}
+/* line 21, ../scss/main.scss */
+.page-title {
+  transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
+}
+/* line 28, ../scss/main.scss */
+.calendar-color .page-title {
+  border-color: #ff0000;
+  -webkit-text-stroke-color: #ff0000;
+}
+/* line 32, ../scss/main.scss */
+.calendar-color .page-title.hover {
+  color: #ff0000;
+}
+/* line 37, ../scss/main.scss */
+.yeah-color .page-title {
+  border-color: #0000ff;
+  -webkit-text-stroke-color: #0000ff;
+}
+/* line 41, ../scss/main.scss */
+.yeah-color .page-title.hover {
+  color: #0000ff;
+}
+/* line 46, ../scss/main.scss */
+.secret-page-color .page-title {
+  border-color: #000;
+  -webkit-text-stroke-color: #000;
+}
+/* line 50, ../scss/main.scss */
+.secret-page-color .page-title.hover {
+  color: #000;
+}
+
+/* BLOG (YEAH, SECRET) */
+/* line 194, ../scss/main.scss */
+.post {
+  margin-top: 80px;
+  font-size: 21px;
+}
+/* line 198, ../scss/main.scss */
+.post img {
+  width: 100%;
+  height: auto;
+}
+/* line 203, ../scss/main.scss */
+.post p {
+  line-height: 1.38em;
+  clear: both;
+}
+/* line 58, ../scss/main.scss */
+.calendar-color .post p {
+  color: #ff0000;
+}
+/* line 62, ../scss/main.scss */
+.yeah-color .post p {
+  color: #0000ff;
+}
+/* line 66, ../scss/main.scss */
+.secret-page-color .post p {
+  color: #000;
+}
+
+/* line 210, ../scss/main.scss */
+.post-header {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 58, ../scss/main.scss */
+.calendar-color .post-header {
+  color: #ff0000;
+}
+/* line 62, ../scss/main.scss */
+.yeah-color .post-header {
+  color: #0000ff;
+}
+/* line 66, ../scss/main.scss */
+.secret-page-color .post-header {
+  color: #000;
+}
+/* line 215, ../scss/main.scss */
+.post-header .post-title, .post-header .post-date {
+  margin-bottom: 25px;
+}
+/* line 219, ../scss/main.scss */
+.post-header .post-title {
+  float: left;
+}
+/* line 223, ../scss/main.scss */
+.post-header .post-date {
+  float: right;
+  line-height: 1;
+  clear: none;
+}

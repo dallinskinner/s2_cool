@@ -1,0 +1,228 @@
+@import "../bower_components/reset-css/reset";
+
+$s-pad: 25px;
+$m-pad: 35px;
+$l-pad: 80px;
+
+$calendar-color: #ff0000;
+$yeah-color: #0000ff;
+$secret-color: #000;
+
+$default-color: $yeah-color;
+
+$default-font-size: 18px;
+
+$animation-time: .5s;
+
+$border-width: 2px;
+
+@mixin color {
+    
+    & {
+        transition: 
+            color $animation-time,
+            border-color $animation-time,
+            -webkit-text-stroke-color $animation-time
+    }
+    
+    .calendar-color & {
+        border-color: $calendar-color;
+        -webkit-text-stroke-color: $calendar-color;
+        
+        &.hover {
+            color: $calendar-color;
+        }
+    }
+    
+    .yeah-color & {
+        border-color: $yeah-color;
+        -webkit-text-stroke-color: $yeah-color;
+        
+        &.hover {
+            color: $yeah-color;
+        }
+    }
+    
+    .secret-page-color & {
+        border-color: $secret-color;
+        -webkit-text-stroke-color: $secret-color;
+        
+        &.hover {
+            color: $secret-color;
+        }
+    }
+}
+
+@mixin no-transition-color {
+    
+    .calendar-color & {
+        color: $calendar-color;
+    }
+    
+    .yeah-color & {
+        color: $yeah-color;
+    }
+    
+    .secret-page-color & {
+        color: $secret-color;
+    }
+}
+
+@mixin clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* GLOBAL */
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/* FIXED NAV */
+
+.main-nav {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $default-font-size;
+}
+
+$fixed-btn-width: 135px;
+
+.home, .contact {
+    position: fixed;
+    border: $border-width solid $default-color;
+    text-align: center;
+    padding: .5em 0;
+    width: #{$fixed-btn-width - 2*$border-width};
+    z-index: 10;
+    background-color: #fff;
+    @include color;
+    
+    a {
+        text-decoration: none;
+        transition: color $animation-time;
+        
+        .secret-page-color & {
+            color: $secret-color;
+        }
+        .yeah-color & {
+            color: $yeah-color;
+        }
+        .calendar-color & {
+            color: $calendar-color;
+        }
+    }
+}
+
+.home {
+    top: $m-pad;
+    left: $m-pad;
+}
+
+.contact {
+    bottom: $m-pad;
+    right: $m-pad;
+}
+
+/* HOME */
+
+.home-page {
+    overflow: hidden;
+}
+
+.home-nav {
+    font-family: DSBluuNext-Bold;
+    font-size: 72px;
+    width: 1600px;
+    height: 1000px;
+    margin-left: -300px;
+    margin-top: -300px;
+    
+    transform: rotate(-45deg);
+    
+    li {
+        display: inline-block;
+    }
+    
+    a {
+        -webkit-text-stroke: 1px $default-color;
+        color: transparent;
+        transition: color $animation-time;
+        @include color;
+        
+        &.hover {
+            @include color;
+        }
+    }
+}
+
+/* CONTENT PAGES */
+
+$fixed-btn-height: $default-font-size * 2 + 2 * $border-width;
+
+$content-side-pad: $m-pad + $fixed-btn-width + $m-pad;
+$content-top-pad: $m-pad + $fixed-btn-height;
+
+$font-title-size: 78px;
+
+.main-content {
+    padding: $content-top-pad $content-side-pad;
+}
+
+.page-title {
+    -webkit-text-stroke: 1px $default-color;
+    @include color;
+    color: transparent;
+    font-size: $font-title-size;
+    font-family: DSBluuNext-Bold;
+    text-align: center;
+    margin-bottom: $l-pad;
+}
+
+/* BLOG (YEAH, SECRET) */
+.post {
+    margin-top: $l-pad;
+    font-size: 21px;
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    p {
+        line-height: 1.38em;
+        clear: both;
+        @include no-transition-color;
+    }
+}
+
+.post-header {
+    text-transform: uppercase;
+    @include no-transition-color;
+    font-weight: 700;
+    
+    .post-title, .post-date {
+        margin-bottom: $s-pad;
+    }
+    
+    .post-title {
+        float: left;
+    }
+    
+    .post-date {
+        float: right;
+        line-height: 1;
+        clear: none;
+    }
+}
