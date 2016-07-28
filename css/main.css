@@ -74,15 +74,20 @@ a:visited {
   color: inherit;
 }
 
+/* line 92, ../scss/main.scss */
+.clear {
+  clear: both;
+}
+
 /* FIXED NAV */
-/* line 94, ../scss/main.scss */
+/* line 98, ../scss/main.scss */
 .main-nav {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
 }
 
-/* line 102, ../scss/main.scss */
+/* line 106, ../scss/main.scss */
 .home, .contact {
   position: fixed;
   border: 2px solid #0000ff;
@@ -123,43 +128,43 @@ a:visited {
 .secret-page-color .home.hover, .secret-page-color .contact.hover {
   color: #000;
 }
-/* line 112, ../scss/main.scss */
+/* line 116, ../scss/main.scss */
 .home a, .contact a {
   text-decoration: none;
   transition: color 0.5s;
 }
-/* line 116, ../scss/main.scss */
+/* line 120, ../scss/main.scss */
 .secret-page-color .home a, .secret-page-color .contact a {
   color: #000;
 }
-/* line 119, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 .yeah-color .home a, .yeah-color .contact a {
   color: #0000ff;
 }
-/* line 122, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 .calendar-color .home a, .calendar-color .contact a {
   color: #ff0000;
 }
 
-/* line 128, ../scss/main.scss */
+/* line 132, ../scss/main.scss */
 .home {
   top: 35px;
   left: 35px;
 }
 
-/* line 133, ../scss/main.scss */
+/* line 137, ../scss/main.scss */
 .contact {
   bottom: 35px;
   right: 35px;
 }
 
 /* HOME */
-/* line 140, ../scss/main.scss */
+/* line 144, ../scss/main.scss */
 .home-page {
   overflow: hidden;
 }
 
-/* line 144, ../scss/main.scss */
+/* line 148, ../scss/main.scss */
 .home-nav {
   font-family: DSBluuNext-Bold;
   font-size: 72px;
@@ -169,11 +174,11 @@ a:visited {
   margin-top: -300px;
   transform: rotate(-45deg);
 }
-/* line 154, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 .home-nav li {
   display: inline-block;
 }
-/* line 158, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 .home-nav a {
   -webkit-text-stroke: 1px #0000ff;
   color: transparent;
@@ -243,12 +248,12 @@ a:visited {
 }
 
 /* CONTENT PAGES */
-/* line 179, ../scss/main.scss */
+/* line 183, ../scss/main.scss */
 .main-content {
-  padding: 75px 205px;
+  padding: 35px 205px;
 }
 
-/* line 183, ../scss/main.scss */
+/* line 187, ../scss/main.scss */
 .page-title {
   -webkit-text-stroke: 1px #0000ff;
   color: transparent;
@@ -290,17 +295,17 @@ a:visited {
 }
 
 /* BLOG (YEAH, SECRET) */
-/* line 194, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 .post {
   margin-top: 80px;
   font-size: 21px;
 }
-/* line 198, ../scss/main.scss */
+/* line 202, ../scss/main.scss */
 .post img {
   width: 100%;
   height: auto;
 }
-/* line 203, ../scss/main.scss */
+/* line 207, ../scss/main.scss */
 .post p {
   line-height: 1.38em;
   clear: both;
@@ -318,7 +323,7 @@ a:visited {
   color: #000;
 }
 
-/* line 210, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 .post-header {
   text-transform: uppercase;
   font-weight: 700;
@@ -335,17 +340,190 @@ a:visited {
 .secret-page-color .post-header {
   color: #000;
 }
-/* line 215, ../scss/main.scss */
+/* line 219, ../scss/main.scss */
 .post-header .post-title, .post-header .post-date {
   margin-bottom: 25px;
 }
-/* line 219, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 .post-header .post-title {
   float: left;
 }
-/* line 223, ../scss/main.scss */
+/* line 227, ../scss/main.scss */
 .post-header .post-date {
   float: right;
   line-height: 1;
   clear: none;
+}
+
+/* line 236, ../scss/main.scss */
+.audio-player {
+  clear: both;
+}
+/* line 240, ../scss/main.scss */
+.audio-player img {
+  width: auto;
+}
+
+/* line 246, ../scss/main.scss */
+iframe[src*="soundcloud"] {
+  display: none;
+}
+
+/* line 250, ../scss/main.scss */
+.audio-top {
+  border: 2px solid #0000ff;
+  height: 172px;
+}
+
+/* line 255, ../scss/main.scss */
+.play-button, .pause-button {
+  float: left;
+  padding: 41px 45px;
+  border-right: 2px solid #0000ff;
+}
+/* line 21, ../scss/main.scss */
+.play-button, .pause-button {
+  transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
+}
+/* line 28, ../scss/main.scss */
+.calendar-color .play-button, .calendar-color .pause-button {
+  border-color: #ff0000;
+  -webkit-text-stroke-color: #ff0000;
+}
+/* line 32, ../scss/main.scss */
+.calendar-color .play-button.hover, .calendar-color .pause-button.hover {
+  color: #ff0000;
+}
+/* line 37, ../scss/main.scss */
+.yeah-color .play-button, .yeah-color .pause-button {
+  border-color: #0000ff;
+  -webkit-text-stroke-color: #0000ff;
+}
+/* line 41, ../scss/main.scss */
+.yeah-color .play-button.hover, .yeah-color .pause-button.hover {
+  color: #0000ff;
+}
+/* line 46, ../scss/main.scss */
+.secret-page-color .play-button, .secret-page-color .pause-button {
+  border-color: #000;
+  -webkit-text-stroke-color: #000;
+}
+/* line 50, ../scss/main.scss */
+.secret-page-color .play-button.hover, .secret-page-color .pause-button.hover {
+  color: #000;
+}
+
+/* line 263, ../scss/main.scss */
+.playing .play-button {
+  display: none;
+}
+
+/* line 268, ../scss/main.scss */
+.pause-button {
+  display: none;
+  padding: 46px 49.5px;
+}
+/* line 272, ../scss/main.scss */
+.playing .pause-button {
+  display: block;
+}
+
+/* line 277, ../scss/main.scss */
+.waveform {
+  display: block;
+  height: 100%;
+  padding: 15px 22px 15px 189px;
+  position: relative;
+  z-index: -1;
+  box-sizing: border-box;
+}
+/* line 21, ../scss/main.scss */
+.waveform {
+  transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
+}
+/* line 28, ../scss/main.scss */
+.calendar-color .waveform {
+  border-color: #ff0000;
+  -webkit-text-stroke-color: #ff0000;
+}
+/* line 32, ../scss/main.scss */
+.calendar-color .waveform.hover {
+  color: #ff0000;
+}
+/* line 37, ../scss/main.scss */
+.yeah-color .waveform {
+  border-color: #0000ff;
+  -webkit-text-stroke-color: #0000ff;
+}
+/* line 41, ../scss/main.scss */
+.yeah-color .waveform.hover {
+  color: #0000ff;
+}
+/* line 46, ../scss/main.scss */
+.secret-page-color .waveform {
+  border-color: #000;
+  -webkit-text-stroke-color: #000;
+}
+/* line 50, ../scss/main.scss */
+.secret-page-color .waveform.hover {
+  color: #000;
+}
+/* line 287, ../scss/main.scss */
+.waveform .wavebar {
+  width: 7px;
+  display: inline-block;
+  background-color: #0000ff;
+  margin: 0 2px;
+}
+
+/* line 295, ../scss/main.scss */
+.info-bar {
+  border: 2px solid #0000ff;
+  border-top: none;
+  padding: 12px 25px;
+  font-weight: 700;
+}
+/* line 58, ../scss/main.scss */
+.calendar-color .info-bar {
+  color: #ff0000;
+}
+/* line 62, ../scss/main.scss */
+.yeah-color .info-bar {
+  color: #0000ff;
+}
+/* line 66, ../scss/main.scss */
+.secret-page-color .info-bar {
+  color: #000;
+}
+/* line 302, ../scss/main.scss */
+.info-bar img {
+  margin-left: 15px;
+  margin-right: -5px;
+}
+
+/* line 308, ../scss/main.scss */
+.track-name {
+  width: 50%;
+  float: left;
+}
+
+/* line 313, ../scss/main.scss */
+.track-info {
+  float: right;
+}
+
+/* line 318, ../scss/main.scss */
+.reposts img {
+  height: 16px;
+}
+
+/* line 324, ../scss/main.scss */
+.comments img {
+  height: 19px;
+  margin-bottom: -3px;
+}
+
+/* line 331, ../scss/main.scss */
+.plays img {
+  height: 15px;
 }

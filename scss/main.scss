@@ -89,6 +89,10 @@ a:visited {
     color: inherit;
 }
 
+.clear {
+    clear: both;
+}
+
 /* FIXED NAV */
 
 .main-nav {
@@ -172,7 +176,7 @@ $fixed-btn-width: 135px;
 $fixed-btn-height: $default-font-size * 2 + 2 * $border-width;
 
 $content-side-pad: $m-pad + $fixed-btn-width + $m-pad;
-$content-top-pad: $m-pad + $fixed-btn-height;
+$content-top-pad: $m-pad;
 
 $font-title-size: 78px;
 
@@ -224,5 +228,107 @@ $font-title-size: 78px;
         float: right;
         line-height: 1;
         clear: none;
+    }
+}
+
+// AUDIO
+
+.audio-player {
+    
+    clear: both;
+    
+    img {
+        width: auto;
+    }
+
+}
+
+iframe[src*="soundcloud"] {
+    display: none;
+}
+
+.audio-top {
+    border: $border-width solid $default-color;
+    height: 172px;
+}
+
+.play-button, .pause-button {
+    @include color;
+    float: left;
+    padding: 41px 45px;
+    border-right: $border-width solid $default-color;
+}
+
+.play-button {
+    .playing & {
+        display: none;
+    }
+}
+
+.pause-button {
+    display: none;
+    padding: 46px 49.5px;
+    
+    .playing & {
+        display: block;
+    }
+}
+
+.waveform {
+    @include color;
+    display: block;
+    height: 100%;
+    padding: 15px 22px 15px (22px + 167px);
+    position: relative;
+    z-index: -1;
+    
+    box-sizing: border-box;
+    
+    .wavebar {
+        width: 7px;
+        display: inline-block;
+        background-color: $default-color;
+        margin: 0 2px;
+    }
+}
+
+.info-bar {
+    border: $border-width solid $default-color;
+    border-top: none;
+    padding: 12px $s-pad;
+    font-weight: 700;
+    @include no-transition-color;
+    
+    img {
+        margin-left: 15px;
+        margin-right: -5px;
+    }
+}
+
+.track-name {
+    width: 50%;
+    float: left;
+}
+
+.track-info {
+    float: right;
+}
+
+.reposts {
+    img {
+        height: 16px;
+    }
+}
+
+.comments {
+    img {
+        height: 19px;
+        margin-bottom: -3px;
+    }
+}
+
+.plays {
+    img {
+        height: 15px;
     }
 }
