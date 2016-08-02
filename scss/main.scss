@@ -68,21 +68,57 @@ $border-width: 2px;
     }
 }
 
+@mixin bg-color {
+    .calendar-color & {
+        background-color: $calendar-color;
+    }
+    
+    .yeah-color & {
+        background-color: $yeah-color;
+    }
+    
+    .secret-page-color & {
+        background-color: $secret-color;
+    }
+}
+
 @mixin clearfix {
   content: "";
   display: table;
   clear: both;
 }
 
+@mixin default-cursor {
+  cursor: url('../img/default.png') 0 0, auto;
+  cursor: -webkit-image-set(
+    url('../img/default.png') 1x,
+    url('../img/default@2x.png') 2x
+  ) 0 0, auto;
+}
+
+@mixin pointer-cursor {
+  cursor: url('../img/pointer.png') 17 0, auto;
+  cursor: -webkit-image-set(
+    url('../img/pointer.png') 1x,
+    url('../img/pointer@2x.png') 2x
+  ) 17 0, auto;
+}
+
 /* GLOBAL */
+
+body, html {
+    height: 100%;
+}
 
 body {
     font-family: 'Space Mono', monospace;
     font-weight: 400;
+    @include default-cursor;
 }
 
 a {
     text-decoration: none;
+    @include pointer-cursor;
 }
 
 a:visited {
@@ -176,12 +212,12 @@ $fixed-btn-width: 135px;
 $fixed-btn-height: $default-font-size * 2 + 2 * $border-width;
 
 $content-side-pad: $m-pad + $fixed-btn-width + $m-pad;
-$content-top-pad: $m-pad;
+$content-top-pad: $m-pad - 16px;
 
-$font-title-size: 78px;
+$font-title-size: 110px;
 
 .main-content {
-    padding: $content-top-pad $content-side-pad;
+    padding: $content-top-pad $content-side-pad $l-pad;
 }
 
 .page-title {
@@ -250,6 +286,7 @@ iframe[src*="soundcloud"] {
 .audio-top {
     border: $border-width solid $default-color;
     height: 172px;
+    @include color;
 }
 
 .play-button, .pause-button {
@@ -257,6 +294,9 @@ iframe[src*="soundcloud"] {
     float: left;
     padding: 41px 45px;
     border-right: $border-width solid $default-color;
+    @include pointer-cursor;
+    
+    
 }
 
 .play-button {
@@ -289,6 +329,7 @@ iframe[src*="soundcloud"] {
         display: inline-block;
         background-color: $default-color;
         margin: 0 2px;
+        @include bg-color;
     }
 }
 
@@ -298,6 +339,7 @@ iframe[src*="soundcloud"] {
     padding: 12px $s-pad;
     font-weight: 700;
     @include no-transition-color;
+    @include color;
     
     img {
         margin-left: 15px;
@@ -331,4 +373,181 @@ iframe[src*="soundcloud"] {
     img {
         height: 15px;
     }
+}
+
+/* CALENDAR */
+
+.calendar-wrap {
+    display: table;
+    width: 100%;
+    @include no-transition-color;
+    font-weight: 700;
+    font-size: 18px;
+    
+    a {
+        @include no-transition-color;
+        text-decoration: underline;
+    }
+}
+
+.calendar-entry {
+    display: table-row;
+}
+
+.location-artists, .tix-wrap, .date-time {
+    display: table-cell;
+    vertical-align: bottom;
+    border-top: solid 2px $calendar-color;
+    padding: 30px 0;
+    line-height: 1.4em;
+    
+    :last-of-type > & {
+        
+        border-bottom: solid 2px $calendar-color;
+    }
+}
+
+.location-artists {
+    width: 56%;
+}
+
+.tix-wrap {
+    text-align: center;
+}
+
+.date-time {
+    text-align: right;
+}
+
+/* SECRET PASSWORD */
+
+.secret-page-color.secret-password {
+    input {
+        width: 100%;
+        border: 2px solid $secret-color;
+        font-size: 85px;
+        font-family: DSBluuNext-Bold;
+        padding-bottom: 15px;
+        margin-top: $l-pad - 20px;
+        
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    .page-title {
+        margin-bottom: 0;
+    }
+    
+    .main-content {
+        text-align: center;
+        padding-top: 0;
+        position:relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.s2-btn {
+    font-size: 24px;
+    color: #fff;
+    @include bg-color;
+    -webkit-appearance: none;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    padding: 10px 70px;
+    margin: $l-pad auto 0;
+    display: inline-block;
+}
+
+/* SECRET PAGE */
+
+$ticker-height: 50px;
+
+.has-ticker {
+    .main-content {
+        padding-top: $content-top-pad + $ticker-height;
+    }
+    
+    .home {
+        top: $m-pad + $ticker-height;
+    }
+}
+
+.ticker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: $ticker-height;
+    background-color: $secret-color;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    overflow: hidden;
+    
+    span {
+        width: 250px;
+        display: inline-block;
+        line-height: $ticker-height;
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+
+/* POPUPS */
+
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup-box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
+    background-color: #fff;
+    text-align: center;
+    max-width: 700px;
+    padding-bottom: $l-pad;
+    border: 2px solid $default-color;
+    font-weight: 700;
+    font-size: 24px;
+    color: $default-color;
+    @include color;
+    @include no-transition-color;
+    
+    p {
+        margin-bottom: 1em;
+    }
+    
+    .s2-btn {
+        margin-top: 0;
+    }
+}
+
+.popup-close {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    top: $s-pad;
+    right: $s-pad;
+}
+
+.popup-title {
+    font-size: 102px;
+    margin-top: $m-pad + 48px + $s-pad;
+    margin-bottom: $l-pad;
+    text-transform: uppercase;
 }

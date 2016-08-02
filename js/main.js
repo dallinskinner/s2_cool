@@ -76,7 +76,7 @@ $(document).ready(function(){
         function scPlay() {
             var $audioPlayer = $(this).closest('.audio-player');
             
-            $audioPlayer.find('.wavebar').css('opacity', '.5');
+            $audioPlayer.find('.wavebar').css('opacity', '.2');
             
             var widget = audioPlayers[$audioPlayer.attr('id')];
             
@@ -135,8 +135,35 @@ $(document).ready(function(){
         }
     }
     
+    function initTicker() {
+        var $ticker = $('.ticker');
+        
+        if ($ticker.length > 0) {
+                $ticker.marquee({
+                duration: 100000,
+                gap: 0,
+                duplicated: true,
+                startVisible: true
+            });
+        }
+        
+    }
+    
+    function initPopup() {
+        var $popup = $('.popup-wrapper');
+        
+        $('.contact, .enter').click(function(){
+            $popup.show();
+        });
+        
+        $('.popup-close, .popup-wrapper .s2-btn').click(function(){
+            $popup.hide();
+        })
+    }
     
     
     initHome();
     initSoundCloud();
+    initTicker();
+    initPopup();
 });
