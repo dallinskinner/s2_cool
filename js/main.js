@@ -56,7 +56,7 @@ $(document).ready(function(){
             
             widget.bind(SC.Widget.Events.PLAY_PROGRESS, function(data) {
                 
-                var progress = data.relativePosition * 65;
+                var progress = data.relativePosition * 55;
                 
                 $wavebars.slice(0, progress).each(function(){
                     $(this).css('opacity', 1);
@@ -100,7 +100,7 @@ $(document).ready(function(){
             var height = data.height;
             var samples = data.samples;
             
-            var targetWidth = 65;
+            var targetWidth = 55;
             
             var chunkSize = width / targetWidth;
             
@@ -127,7 +127,7 @@ $(document).ready(function(){
         }
         
         function buildWaveForm(data, $audioPlayer) {
-            var $waveform = $audioPlayer.find('.waveform');
+            var $waveform = $audioPlayer.find('.waveform-inner');
             
             for (var i=0; i < data.length; i++) {
                 $waveform.append('<div class="wavebar" style="height: '+(data[i]*100)+'% "></div>')

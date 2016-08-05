@@ -58,12 +58,12 @@ table {
 }
 
 /* GLOBAL */
-/* line 118, ../scss/main.scss */
+/* line 113, ../scss/mainres.scss */
 body, html {
   height: 100%;
 }
 
-/* line 122, ../scss/main.scss */
+/* line 117, ../scss/mainres.scss */
 body {
   font-family: 'Space Mono', monospace;
   font-weight: 400;
@@ -71,110 +71,110 @@ body {
   cursor: -webkit-image-set(url("../img/default.png") 1x, url("../img/default@2x.png") 2x) 0 0, auto;
 }
 
-/* line 128, ../scss/main.scss */
+/* line 123, ../scss/mainres.scss */
 a {
   text-decoration: none;
   cursor: url("../img/pointer.png") 17 0, auto;
   cursor: -webkit-image-set(url("../img/pointer.png") 1x, url("../img/pointer@2x.png") 2x) 17 0, auto;
 }
 
-/* line 133, ../scss/main.scss */
+/* line 128, ../scss/mainres.scss */
 a:visited {
   color: inherit;
 }
 
-/* line 137, ../scss/main.scss */
+/* line 132, ../scss/mainres.scss */
 .clear {
   clear: both;
 }
 
 /* FIXED NAV */
-/* line 143, ../scss/main.scss */
+/* line 138, ../scss/mainres.scss */
 .main-nav {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.59292vw;
   color: #0000ff;
 }
 
-/* line 152, ../scss/main.scss */
+/* line 147, ../scss/mainres.scss */
 .home, .contact {
   position: fixed;
   border: 2px solid #0000ff;
   text-align: center;
   padding: .5em 0;
-  width: 135px;
+  width: 11.9469vw;
   z-index: 10;
   background-color: #fff;
 }
-/* line 30, ../scss/main.scss */
+/* line 25, ../scss/mainres.scss */
 .home, .contact {
   transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
 }
-/* line 37, ../scss/main.scss */
+/* line 32, ../scss/mainres.scss */
 .calendar-color .home, .calendar-color .contact {
   border-color: #ff0000;
   -webkit-text-stroke-color: #ff0000;
 }
-/* line 41, ../scss/main.scss */
+/* line 36, ../scss/mainres.scss */
 .calendar-color .home.hover, .calendar-color .contact.hover {
   color: #ff0000;
 }
-/* line 46, ../scss/main.scss */
+/* line 41, ../scss/mainres.scss */
 .yeah-color .home, .yeah-color .contact {
   border-color: #0000ff;
   -webkit-text-stroke-color: #0000ff;
 }
-/* line 50, ../scss/main.scss */
+/* line 45, ../scss/mainres.scss */
 .yeah-color .home.hover, .yeah-color .contact.hover {
   color: #0000ff;
 }
-/* line 55, ../scss/main.scss */
+/* line 50, ../scss/mainres.scss */
 .secret-page-color .home, .secret-page-color .contact {
   border-color: #000;
   -webkit-text-stroke-color: #000;
 }
-/* line 59, ../scss/main.scss */
+/* line 54, ../scss/mainres.scss */
 .secret-page-color .home.hover, .secret-page-color .contact.hover {
   color: #000;
 }
-/* line 162, ../scss/main.scss */
+/* line 157, ../scss/mainres.scss */
 .home a, .contact a {
   text-decoration: none;
   transition: color 0.5s;
 }
-/* line 166, ../scss/main.scss */
+/* line 161, ../scss/mainres.scss */
 .secret-page-color .home a, .secret-page-color .contact a {
   color: #000;
 }
-/* line 169, ../scss/main.scss */
+/* line 164, ../scss/mainres.scss */
 .yeah-color .home a, .yeah-color .contact a {
   color: #0000ff;
 }
-/* line 172, ../scss/main.scss */
+/* line 167, ../scss/mainres.scss */
 .calendar-color .home a, .calendar-color .contact a {
   color: #ff0000;
 }
 
-/* line 178, ../scss/main.scss */
+/* line 173, ../scss/mainres.scss */
 .home {
-  top: 35px;
-  left: 35px;
+  top: 3.09735vw;
+  left: 3.09735vw;
 }
 
-/* line 183, ../scss/main.scss */
+/* line 178, ../scss/mainres.scss */
 .contact {
-  bottom: 35px;
-  right: 35px;
+  bottom: 3.09735vw;
+  right: 3.09735vw;
 }
 
 /* HOME */
-/* line 190, ../scss/main.scss */
+/* line 185, ../scss/mainres.scss */
 .home-page {
   overflow: hidden;
 }
 
-/* line 194, ../scss/main.scss */
+/* line 189, ../scss/mainres.scss */
 .home-nav {
   font-family: DSBluuNext-Bold;
   font-size: 72px;
@@ -184,548 +184,534 @@ a:visited {
   margin-top: -300px;
   transform: rotate(-45deg);
 }
-/* line 204, ../scss/main.scss */
+/* line 199, ../scss/mainres.scss */
 .home-nav li {
   display: inline-block;
 }
-/* line 208, ../scss/main.scss */
+/* line 203, ../scss/mainres.scss */
 .home-nav a {
   -webkit-text-stroke: 1px #0000ff;
   color: transparent;
   transition: color 0.5s;
 }
-/* line 30, ../scss/main.scss */
+/* line 25, ../scss/mainres.scss */
 .home-nav a {
   transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
 }
-/* line 37, ../scss/main.scss */
+/* line 32, ../scss/mainres.scss */
 .calendar-color .home-nav a {
   border-color: #ff0000;
   -webkit-text-stroke-color: #ff0000;
 }
-/* line 41, ../scss/main.scss */
+/* line 36, ../scss/mainres.scss */
 .calendar-color .home-nav a.hover {
   color: #ff0000;
 }
-/* line 46, ../scss/main.scss */
+/* line 41, ../scss/mainres.scss */
 .yeah-color .home-nav a {
   border-color: #0000ff;
   -webkit-text-stroke-color: #0000ff;
 }
-/* line 50, ../scss/main.scss */
+/* line 45, ../scss/mainres.scss */
 .yeah-color .home-nav a.hover {
   color: #0000ff;
 }
-/* line 55, ../scss/main.scss */
+/* line 50, ../scss/mainres.scss */
 .secret-page-color .home-nav a {
   border-color: #000;
   -webkit-text-stroke-color: #000;
 }
-/* line 59, ../scss/main.scss */
+/* line 54, ../scss/mainres.scss */
 .secret-page-color .home-nav a.hover {
   color: #000;
 }
-/* line 30, ../scss/main.scss */
+/* line 25, ../scss/mainres.scss */
 .home-nav a.hover {
   transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
 }
-/* line 37, ../scss/main.scss */
+/* line 32, ../scss/mainres.scss */
 .calendar-color .home-nav a.hover {
   border-color: #ff0000;
   -webkit-text-stroke-color: #ff0000;
 }
-/* line 41, ../scss/main.scss */
+/* line 36, ../scss/mainres.scss */
 .calendar-color .home-nav a.hover.hover {
   color: #ff0000;
 }
-/* line 46, ../scss/main.scss */
+/* line 41, ../scss/mainres.scss */
 .yeah-color .home-nav a.hover {
   border-color: #0000ff;
   -webkit-text-stroke-color: #0000ff;
 }
-/* line 50, ../scss/main.scss */
+/* line 45, ../scss/mainres.scss */
 .yeah-color .home-nav a.hover.hover {
   color: #0000ff;
 }
-/* line 55, ../scss/main.scss */
+/* line 50, ../scss/mainres.scss */
 .secret-page-color .home-nav a.hover {
   border-color: #000;
   -webkit-text-stroke-color: #000;
 }
-/* line 59, ../scss/main.scss */
+/* line 54, ../scss/mainres.scss */
 .secret-page-color .home-nav a.hover.hover {
   color: #000;
 }
 
 /* CONTENT PAGES */
-/* line 229, ../scss/main.scss */
+/* line 224, ../scss/mainres.scss */
 .main-content {
-  padding: 19px 205px 80px;
+  padding: 1.68142vw 18.14159vw 7.07965vw;
 }
 
-/* line 233, ../scss/main.scss */
+/* line 228, ../scss/mainres.scss */
 .page-title {
   -webkit-text-stroke: 1px #0000ff;
   color: transparent;
-  font-size: 110px;
+  font-size: 9.73451vw;
   font-family: DSBluuNext-Bold;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 7.07965vw;
 }
-/* line 30, ../scss/main.scss */
+/* line 25, ../scss/mainres.scss */
 .page-title {
   transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
 }
-/* line 37, ../scss/main.scss */
+/* line 32, ../scss/mainres.scss */
 .calendar-color .page-title {
   border-color: #ff0000;
   -webkit-text-stroke-color: #ff0000;
 }
-/* line 41, ../scss/main.scss */
+/* line 36, ../scss/mainres.scss */
 .calendar-color .page-title.hover {
   color: #ff0000;
 }
-/* line 46, ../scss/main.scss */
+/* line 41, ../scss/mainres.scss */
 .yeah-color .page-title {
   border-color: #0000ff;
   -webkit-text-stroke-color: #0000ff;
 }
-/* line 50, ../scss/main.scss */
+/* line 45, ../scss/mainres.scss */
 .yeah-color .page-title.hover {
   color: #0000ff;
 }
-/* line 55, ../scss/main.scss */
+/* line 50, ../scss/mainres.scss */
 .secret-page-color .page-title {
   border-color: #000;
   -webkit-text-stroke-color: #000;
 }
-/* line 59, ../scss/main.scss */
+/* line 54, ../scss/mainres.scss */
 .secret-page-color .page-title.hover {
   color: #000;
 }
 
 /* BLOG (YEAH, SECRET) */
-/* line 244, ../scss/main.scss */
+/* line 239, ../scss/mainres.scss */
 .post {
-  margin-top: 80px;
-  font-size: 21px;
+  margin-top: 7.07965vw;
+  font-size: 1.85841vw;
 }
-/* line 248, ../scss/main.scss */
+/* line 243, ../scss/mainres.scss */
 .post img {
   width: 100%;
   height: auto;
 }
-/* line 253, ../scss/main.scss */
+/* line 248, ../scss/mainres.scss */
 .post p {
   line-height: 1.38em;
   clear: both;
 }
-/* line 67, ../scss/main.scss */
+/* line 62, ../scss/mainres.scss */
 .calendar-color .post p {
   color: #ff0000;
 }
-/* line 71, ../scss/main.scss */
+/* line 66, ../scss/mainres.scss */
 .yeah-color .post p {
   color: #0000ff;
 }
-/* line 75, ../scss/main.scss */
+/* line 70, ../scss/mainres.scss */
 .secret-page-color .post p {
   color: #000;
 }
 
-/* line 260, ../scss/main.scss */
+/* line 255, ../scss/mainres.scss */
 .post-header {
   text-transform: uppercase;
   font-weight: 700;
 }
-/* line 67, ../scss/main.scss */
+/* line 62, ../scss/mainres.scss */
 .calendar-color .post-header {
   color: #ff0000;
 }
-/* line 71, ../scss/main.scss */
+/* line 66, ../scss/mainres.scss */
 .yeah-color .post-header {
   color: #0000ff;
 }
-/* line 75, ../scss/main.scss */
+/* line 70, ../scss/mainres.scss */
 .secret-page-color .post-header {
   color: #000;
 }
-/* line 265, ../scss/main.scss */
+/* line 260, ../scss/mainres.scss */
 .post-header .post-title, .post-header .post-date {
-  margin-bottom: 25px;
+  margin-bottom: 2.21239vw;
 }
-/* line 269, ../scss/main.scss */
+/* line 264, ../scss/mainres.scss */
 .post-header .post-title {
   float: left;
 }
-/* line 273, ../scss/main.scss */
+/* line 268, ../scss/mainres.scss */
 .post-header .post-date {
   float: right;
   line-height: 1;
   clear: none;
 }
 
-/* line 282, ../scss/main.scss */
+/* line 277, ../scss/mainres.scss */
 .audio-player {
   clear: both;
 }
-/* line 286, ../scss/main.scss */
+/* line 281, ../scss/mainres.scss */
 .audio-player img {
   width: auto;
 }
 
-/* line 292, ../scss/main.scss */
+/* line 287, ../scss/mainres.scss */
 iframe[src*="soundcloud"] {
   display: none;
 }
 
-/* line 296, ../scss/main.scss */
+/* line 291, ../scss/mainres.scss */
 .audio-top {
   border: 2px solid #0000ff;
-  height: 172px;
+  height: 15.22124vw;
   overflow: hidden;
 }
-/* line 30, ../scss/main.scss */
+/* line 25, ../scss/mainres.scss */
 .audio-top {
   transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
 }
-/* line 37, ../scss/main.scss */
+/* line 32, ../scss/mainres.scss */
 .calendar-color .audio-top {
   border-color: #ff0000;
   -webkit-text-stroke-color: #ff0000;
 }
-/* line 41, ../scss/main.scss */
+/* line 36, ../scss/mainres.scss */
 .calendar-color .audio-top.hover {
   color: #ff0000;
 }
-/* line 46, ../scss/main.scss */
+/* line 41, ../scss/mainres.scss */
 .yeah-color .audio-top {
   border-color: #0000ff;
   -webkit-text-stroke-color: #0000ff;
 }
-/* line 50, ../scss/main.scss */
+/* line 45, ../scss/mainres.scss */
 .yeah-color .audio-top.hover {
   color: #0000ff;
 }
-/* line 55, ../scss/main.scss */
+/* line 50, ../scss/mainres.scss */
 .secret-page-color .audio-top {
   border-color: #000;
   -webkit-text-stroke-color: #000;
 }
-/* line 59, ../scss/main.scss */
+/* line 54, ../scss/mainres.scss */
 .secret-page-color .audio-top.hover {
   color: #000;
 }
 
-/* line 303, ../scss/main.scss */
+/* line 298, ../scss/mainres.scss */
 .play-button, .pause-button {
   float: left;
-  padding: 41px 45px;
+  padding: 3.62832vw 3.9823vw;
   border-right: 2px solid #0000ff;
   cursor: url("../img/pointer.png") 17 0, auto;
   cursor: -webkit-image-set(url("../img/pointer.png") 1x, url("../img/pointer@2x.png") 2x) 17 0, auto;
 }
-/* line 30, ../scss/main.scss */
+/* line 25, ../scss/mainres.scss */
 .play-button, .pause-button {
   transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
 }
-/* line 37, ../scss/main.scss */
+/* line 32, ../scss/mainres.scss */
 .calendar-color .play-button, .calendar-color .pause-button {
   border-color: #ff0000;
   -webkit-text-stroke-color: #ff0000;
 }
-/* line 41, ../scss/main.scss */
+/* line 36, ../scss/mainres.scss */
 .calendar-color .play-button.hover, .calendar-color .pause-button.hover {
   color: #ff0000;
 }
-/* line 46, ../scss/main.scss */
+/* line 41, ../scss/mainres.scss */
 .yeah-color .play-button, .yeah-color .pause-button {
   border-color: #0000ff;
   -webkit-text-stroke-color: #0000ff;
 }
-/* line 50, ../scss/main.scss */
+/* line 45, ../scss/mainres.scss */
 .yeah-color .play-button.hover, .yeah-color .pause-button.hover {
   color: #0000ff;
 }
-/* line 55, ../scss/main.scss */
+/* line 50, ../scss/mainres.scss */
 .secret-page-color .play-button, .secret-page-color .pause-button {
   border-color: #000;
   -webkit-text-stroke-color: #000;
 }
-/* line 59, ../scss/main.scss */
+/* line 54, ../scss/mainres.scss */
 .secret-page-color .play-button.hover, .secret-page-color .pause-button.hover {
   color: #000;
 }
 
-/* line 314, ../scss/main.scss */
+/* line 309, ../scss/mainres.scss */
 .playing .play-button {
   display: none;
 }
-/* line 318, ../scss/main.scss */
+/* line 313, ../scss/mainres.scss */
 .play-button img {
-  width: 75px;
+  width: 6.63717vw;
 }
 
-/* line 323, ../scss/main.scss */
+/* line 318, ../scss/mainres.scss */
 .pause-button {
   display: none;
-  padding: 46px 49.5px;
+  padding: 4.0708vw 4.38053vw;
 }
-/* line 327, ../scss/main.scss */
+/* line 322, ../scss/mainres.scss */
 .playing .pause-button {
   display: block;
 }
-/* line 331, ../scss/main.scss */
+/* line 326, ../scss/mainres.scss */
 .pause-button img {
-  width: 65.55px;
+  width: 5.80088vw;
 }
 
-/* line 336, ../scss/main.scss */
+/* line 331, ../scss/mainres.scss */
 .waveform {
   display: block;
   height: 100%;
-  padding: 15px 22px 15px 189px;
+  padding: 1.32743vw 1.9469vw 1.32743vw 16.72566vw;
   position: relative;
   z-index: -1;
   box-sizing: border-box;
 }
-/* line 30, ../scss/main.scss */
+/* line 25, ../scss/mainres.scss */
 .waveform {
   transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
 }
-/* line 37, ../scss/main.scss */
+/* line 32, ../scss/mainres.scss */
 .calendar-color .waveform {
   border-color: #ff0000;
   -webkit-text-stroke-color: #ff0000;
 }
-/* line 41, ../scss/main.scss */
+/* line 36, ../scss/mainres.scss */
 .calendar-color .waveform.hover {
   color: #ff0000;
 }
-/* line 46, ../scss/main.scss */
+/* line 41, ../scss/mainres.scss */
 .yeah-color .waveform {
   border-color: #0000ff;
   -webkit-text-stroke-color: #0000ff;
 }
-/* line 50, ../scss/main.scss */
+/* line 45, ../scss/mainres.scss */
 .yeah-color .waveform.hover {
   color: #0000ff;
 }
-/* line 55, ../scss/main.scss */
+/* line 50, ../scss/mainres.scss */
 .secret-page-color .waveform {
   border-color: #000;
   -webkit-text-stroke-color: #000;
 }
-/* line 59, ../scss/main.scss */
+/* line 54, ../scss/mainres.scss */
 .secret-page-color .waveform.hover {
   color: #000;
 }
-/* line 346, ../scss/main.scss */
+/* line 341, ../scss/mainres.scss */
 .waveform .wavebar {
-  width: 6.9px;
+  width: 0.61062vw;
   display: inline-block;
   background-color: #0000ff;
-  margin: 0 2px;
-  margin-top: 10px;
+  margin: 0 0.17699vw;
 }
-/* line 81, ../scss/main.scss */
+/* line 76, ../scss/mainres.scss */
 .calendar-color .waveform .wavebar {
   background-color: #ff0000;
 }
-/* line 85, ../scss/main.scss */
+/* line 80, ../scss/mainres.scss */
 .yeah-color .waveform .wavebar {
   background-color: #0000ff;
 }
-/* line 89, ../scss/main.scss */
+/* line 84, ../scss/mainres.scss */
 .secret-page-color .waveform .wavebar {
   background-color: #000;
 }
-@media (min-width: 1217px) {
-  /* line 356, ../scss/main.scss */
-  .waveform .wavebar {
-    width: 1.3%;
-    margin-left: .3%;
-    margin-right: .3%;
-  }
-}
-/* line 363, ../scss/main.scss */
-.waveform .waveform-inner {
-  overflow: hidden;
-  height: 100%;
-}
 
-/* line 369, ../scss/main.scss */
+/* line 350, ../scss/mainres.scss */
 .info-bar {
   border: 2px solid #0000ff;
   border-top: none;
-  padding: 12px 25px;
+  padding: 1.06195vw 2.21239vw;
   font-weight: 700;
 }
-/* line 67, ../scss/main.scss */
+/* line 62, ../scss/mainres.scss */
 .calendar-color .info-bar {
   color: #ff0000;
 }
-/* line 71, ../scss/main.scss */
+/* line 66, ../scss/mainres.scss */
 .yeah-color .info-bar {
   color: #0000ff;
 }
-/* line 75, ../scss/main.scss */
+/* line 70, ../scss/mainres.scss */
 .secret-page-color .info-bar {
   color: #000;
 }
-/* line 30, ../scss/main.scss */
+/* line 25, ../scss/mainres.scss */
 .info-bar {
   transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
 }
-/* line 37, ../scss/main.scss */
+/* line 32, ../scss/mainres.scss */
 .calendar-color .info-bar {
   border-color: #ff0000;
   -webkit-text-stroke-color: #ff0000;
 }
-/* line 41, ../scss/main.scss */
+/* line 36, ../scss/mainres.scss */
 .calendar-color .info-bar.hover {
   color: #ff0000;
 }
-/* line 46, ../scss/main.scss */
+/* line 41, ../scss/mainres.scss */
 .yeah-color .info-bar {
   border-color: #0000ff;
   -webkit-text-stroke-color: #0000ff;
 }
-/* line 50, ../scss/main.scss */
+/* line 45, ../scss/mainres.scss */
 .yeah-color .info-bar.hover {
   color: #0000ff;
 }
-/* line 55, ../scss/main.scss */
+/* line 50, ../scss/mainres.scss */
 .secret-page-color .info-bar {
   border-color: #000;
   -webkit-text-stroke-color: #000;
 }
-/* line 59, ../scss/main.scss */
+/* line 54, ../scss/mainres.scss */
 .secret-page-color .info-bar.hover {
   color: #000;
 }
-/* line 377, ../scss/main.scss */
+/* line 358, ../scss/mainres.scss */
 .info-bar img {
-  margin-left: 15px;
-  margin-right: -5px;
+  margin-left: 1.32743vw;
+  margin-right: -0.44248vw;
 }
 
-/* line 383, ../scss/main.scss */
+/* line 364, ../scss/mainres.scss */
 .track-name {
   width: 50%;
   float: left;
 }
 
-/* line 388, ../scss/main.scss */
+/* line 369, ../scss/mainres.scss */
 .track-info {
   float: right;
 }
 
-/* line 393, ../scss/main.scss */
+/* line 374, ../scss/mainres.scss */
 .reposts img {
-  height: 16px;
+  height: 1.41593vw;
 }
 
-/* line 399, ../scss/main.scss */
+/* line 380, ../scss/mainres.scss */
 .comments img {
-  height: 19px;
-  margin-bottom: -3px;
+  height: 1.68142vw;
+  margin-bottom: -0.26549vw;
 }
 
-/* line 406, ../scss/main.scss */
+/* line 387, ../scss/mainres.scss */
 .plays img {
-  height: 15px;
+  height: 1.32743vw;
 }
 
 /* CALENDAR */
-/* line 413, ../scss/main.scss */
+/* line 394, ../scss/mainres.scss */
 .calendar-wrap {
   display: table;
   width: 100%;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.59292vw;
 }
-/* line 67, ../scss/main.scss */
+/* line 62, ../scss/mainres.scss */
 .calendar-color .calendar-wrap {
   color: #ff0000;
 }
-/* line 71, ../scss/main.scss */
+/* line 66, ../scss/mainres.scss */
 .yeah-color .calendar-wrap {
   color: #0000ff;
 }
-/* line 75, ../scss/main.scss */
+/* line 70, ../scss/mainres.scss */
 .secret-page-color .calendar-wrap {
   color: #000;
 }
-/* line 420, ../scss/main.scss */
+/* line 401, ../scss/mainres.scss */
 .calendar-wrap a {
   text-decoration: underline;
 }
-/* line 67, ../scss/main.scss */
+/* line 62, ../scss/mainres.scss */
 .calendar-color .calendar-wrap a {
   color: #ff0000;
 }
-/* line 71, ../scss/main.scss */
+/* line 66, ../scss/mainres.scss */
 .yeah-color .calendar-wrap a {
   color: #0000ff;
 }
-/* line 75, ../scss/main.scss */
+/* line 70, ../scss/mainres.scss */
 .secret-page-color .calendar-wrap a {
   color: #000;
 }
 
-/* line 426, ../scss/main.scss */
+/* line 407, ../scss/mainres.scss */
 .calendar-entry {
   display: table-row;
 }
 
-/* line 430, ../scss/main.scss */
+/* line 411, ../scss/mainres.scss */
 .location-artists, .tix-wrap, .date-time {
   display: table-cell;
   vertical-align: bottom;
-  border-top: solid 2px #ff0000;
-  padding: 30px 0;
+  border-top: solid 0.17699vw #ff0000;
+  padding: 2.65487vw 0;
   line-height: 1.4em;
 }
-/* line 437, ../scss/main.scss */
+/* line 418, ../scss/mainres.scss */
 :last-of-type > .location-artists, :last-of-type > .tix-wrap, :last-of-type > .date-time {
-  border-bottom: solid 2px #ff0000;
+  border-bottom: solid 0.17699vw #ff0000;
 }
 
-/* line 443, ../scss/main.scss */
+/* line 424, ../scss/mainres.scss */
 .location-artists {
   width: 56%;
 }
 
-/* line 447, ../scss/main.scss */
+/* line 428, ../scss/mainres.scss */
 .tix-wrap {
   text-align: center;
 }
 
-/* line 451, ../scss/main.scss */
+/* line 432, ../scss/mainres.scss */
 .date-time {
   text-align: right;
 }
 
 /* SECRET PASSWORD */
-/* line 458, ../scss/main.scss */
+/* line 439, ../scss/mainres.scss */
 .secret-page-color.secret-password input {
   width: 100%;
   border: 2px solid #000;
-  font-size: 85px;
+  font-size: 7.52212vw;
   font-family: DSBluuNext-Bold;
-  padding-bottom: 15px;
-  margin-top: 60px;
+  padding-bottom: 1.32743vw;
+  margin-top: 5.30973vw;
 }
-/* line 466, ../scss/main.scss */
+/* line 447, ../scss/mainres.scss */
 .secret-page-color.secret-password input:focus {
   outline: none;
 }
-/* line 471, ../scss/main.scss */
+/* line 452, ../scss/mainres.scss */
 .secret-page-color.secret-password .page-title {
   margin-bottom: 0;
 }
-/* line 475, ../scss/main.scss */
+/* line 456, ../scss/mainres.scss */
 .secret-page-color.secret-password .main-content {
   text-align: center;
   padding-top: 0;
@@ -734,65 +720,65 @@ iframe[src*="soundcloud"] {
   transform: translateY(-50%);
 }
 
-/* line 484, ../scss/main.scss */
+/* line 465, ../scss/mainres.scss */
 .s2-btn {
-  font-size: 24px;
+  font-size: 2.12389vw;
   color: #fff;
   -webkit-appearance: none;
   border: none;
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
-  padding: 10px 70px;
-  margin: 80px auto 0;
+  padding: 0.88496vw 6.19469vw;
+  margin: 7.07965vw auto 0;
   display: inline-block;
 }
-/* line 81, ../scss/main.scss */
+/* line 76, ../scss/mainres.scss */
 .calendar-color .s2-btn {
   background-color: #ff0000;
 }
-/* line 85, ../scss/main.scss */
+/* line 80, ../scss/mainres.scss */
 .yeah-color .s2-btn {
   background-color: #0000ff;
 }
-/* line 89, ../scss/main.scss */
+/* line 84, ../scss/mainres.scss */
 .secret-page-color .s2-btn {
   background-color: #000;
 }
 
 /* SECRET PAGE */
-/* line 502, ../scss/main.scss */
+/* line 483, ../scss/mainres.scss */
 .has-ticker .main-content {
-  padding-top: 69px;
+  padding-top: 6.10619vw;
 }
-/* line 506, ../scss/main.scss */
+/* line 487, ../scss/mainres.scss */
 .has-ticker .home {
-  top: 85px;
+  top: 7.52212vw;
 }
 
-/* line 511, ../scss/main.scss */
+/* line 492, ../scss/mainres.scss */
 .ticker {
   position: fixed;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 50px;
+  height: 4.42478vw;
   background-color: #000;
-  font-size: 18px;
+  font-size: 1.59292vw;
   text-transform: uppercase;
   color: #fff;
   overflow: hidden;
 }
-/* line 523, ../scss/main.scss */
+/* line 504, ../scss/mainres.scss */
 .ticker span {
-  width: 250px;
+  width: 22.12389vw;
   display: inline-block;
-  line-height: 50px;
+  line-height: 4.42478vw;
   vertical-align: middle;
   text-align: center;
 }
 
 /* POPUPS */
-/* line 534, ../scss/main.scss */
+/* line 515, ../scss/mainres.scss */
 .popup-wrapper {
   position: fixed;
   top: 0;
@@ -802,7 +788,7 @@ iframe[src*="soundcloud"] {
   display: none;
 }
 
-/* line 543, ../scss/main.scss */
+/* line 524, ../scss/mainres.scss */
 .popup-box {
   position: absolute;
   top: 50%;
@@ -813,116 +799,104 @@ iframe[src*="soundcloud"] {
   transform: translateY(-50%);
   background-color: #fff;
   text-align: center;
-  max-width: 700px;
-  padding-bottom: 80px;
+  max-width: 61.9469vw;
+  padding-bottom: 7.07965vw;
   border: 2px solid #0000ff;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2.12389vw;
   color: #0000ff;
 }
-/* line 30, ../scss/main.scss */
+/* line 25, ../scss/mainres.scss */
 .popup-box {
   transition: color 0.5s, border-color 0.5s, -webkit-text-stroke-color 0.5s;
 }
-/* line 37, ../scss/main.scss */
+/* line 32, ../scss/mainres.scss */
 .calendar-color .popup-box {
   border-color: #ff0000;
   -webkit-text-stroke-color: #ff0000;
 }
-/* line 41, ../scss/main.scss */
+/* line 36, ../scss/mainres.scss */
 .calendar-color .popup-box.hover {
   color: #ff0000;
 }
-/* line 46, ../scss/main.scss */
+/* line 41, ../scss/mainres.scss */
 .yeah-color .popup-box {
   border-color: #0000ff;
   -webkit-text-stroke-color: #0000ff;
 }
-/* line 50, ../scss/main.scss */
+/* line 45, ../scss/mainres.scss */
 .yeah-color .popup-box.hover {
   color: #0000ff;
 }
-/* line 55, ../scss/main.scss */
+/* line 50, ../scss/mainres.scss */
 .secret-page-color .popup-box {
   border-color: #000;
   -webkit-text-stroke-color: #000;
 }
-/* line 59, ../scss/main.scss */
+/* line 54, ../scss/mainres.scss */
 .secret-page-color .popup-box.hover {
   color: #000;
 }
-/* line 67, ../scss/main.scss */
+/* line 62, ../scss/mainres.scss */
 .calendar-color .popup-box {
   color: #ff0000;
 }
-/* line 71, ../scss/main.scss */
+/* line 66, ../scss/mainres.scss */
 .yeah-color .popup-box {
   color: #0000ff;
 }
-/* line 75, ../scss/main.scss */
+/* line 70, ../scss/mainres.scss */
 .secret-page-color .popup-box {
   color: #000;
 }
-/* line 562, ../scss/main.scss */
+/* line 543, ../scss/mainres.scss */
 .popup-box p {
   margin-bottom: 1em;
 }
-/* line 566, ../scss/main.scss */
+/* line 547, ../scss/mainres.scss */
 .popup-box .s2-btn {
   margin-top: 0;
 }
 
-/* line 571, ../scss/main.scss */
+/* line 552, ../scss/mainres.scss */
 .popup-close {
-  font-size: 48px;
+  font-size: 4.24779vw;
   font-weight: 700;
   text-align: right;
   display: inline-block;
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 2.21239vw;
+  right: 2.21239vw;
 }
 
-/* line 581, ../scss/main.scss */
+/* line 562, ../scss/mainres.scss */
 .popup-title {
-  font-size: 102px;
-  margin-top: 108px;
-  margin-bottom: 80px;
+  font-size: 9.02655vw;
+  margin-top: 9.55752vw;
+  margin-bottom: 7.07965vw;
   text-transform: uppercase;
 }
 
 @media (min-width: 1130px) {
   /* line 1, ../scss/large.scss */
   .home-nav {
-    font-size: 6.37168vw;
-    width: 141.59292vw;
-    height: 88.49558vw;
-    margin-left: -26.54867vw;
-    margin-top: -26.54867vw;
+    font-size: home-scale(72px);
+    width: home-scale(1600px);
+    height: home-scale(1000px);
+    margin-left: home-scale(-300px);
+    margin-top: home-scale(-300px);
   }
 }
-@media (max-width: 1129px) {
-  /* line 593, ../scss/main.scss */
-  .main-content {
-    padding: 30px 35px 80px;
-  }
-
-  /* line 597, ../scss/main.scss */
-  .waveform .wavebar {
-    width: 12px;
-    margin: 10px 2px 0;
-  }
-}
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   /* line 1, ../scss/small.scss */
   .main-content {
-    padding: 30px 35px 80px;
+    padding: 30px 3.09735vw 7.07965vw;
   }
 
   /* line 6, ../scss/small.scss */
   .waveform .wavebar {
-    width: 11.4px;
-    margin: 0 2.1px;
+    width: 1.00885vw;
+    margin: 0 0.18584vw;
     margin-top: 10px;
   }
 
@@ -961,18 +935,18 @@ iframe[src*="soundcloud"] {
 
   /* line 41, ../scss/small.scss */
   .reposts img {
-    height: 10px;
+    height: 0.88496vw;
   }
 
   /* line 47, ../scss/small.scss */
   .comments img {
-    height: 13px;
-    margin-bottom: -2px;
+    height: 1.15044vw;
+    margin-bottom: -0.17699vw;
   }
 
   /* line 54, ../scss/small.scss */
   .plays img {
-    height: 10px;
+    height: 0.88496vw;
   }
 
   /* line 60, ../scss/small.scss */

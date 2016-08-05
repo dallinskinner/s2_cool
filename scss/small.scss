@@ -1,0 +1,97 @@
+.main-content {
+    padding: 30px $m-pad $l-pad;
+}
+
+
+.waveform .wavebar {
+    width: res-scale(11.4px);
+    margin: 0 res-scale(2.1px);
+    margin-top: 10px;
+}
+
+.track-name {
+    width: 100%;
+    float: none;
+}
+.track-info {
+    width: 100%;
+    float: none;
+    margin-top: 10px;
+}
+
+.reposts {
+    img {
+        margin-left: 0;
+    }
+}
+
+.page-title {
+    font-size: 72px;
+}
+
+.post {
+    font-size: 12px;
+}
+
+.calendar-wrap {
+    font-size: 12px;
+}
+
+.reposts {
+    img {
+        height: res-scale(10px);
+    }
+}
+
+.comments {
+    img {
+        height: res-scale(13px);
+        margin-bottom: res-scale(-2px);
+    }
+}
+
+.plays {
+    img {
+        height: res-scale(10px);
+    }
+}
+
+.post-header {
+    .post-title, .post-date {
+        margin-bottom: 10px;
+    }
+}
+
+.play-button, .pause-button {
+    padding: 20px 23px;
+}
+
+.play-button {
+    .playing & {
+        display: none;
+    }
+    
+    img {
+        width: 37.5px
+    }
+}
+
+.pause-button {
+    
+    img {
+        width: 32.775px;
+    }
+}
+
+.audio-top {
+    height: 84px;
+}
+
+.waveform {
+    padding: 10px 10px 10px 94px;
+    
+    .wavebar {
+        width: 6px;
+        margin: 10px 1.5px 0;
+    }
+}
